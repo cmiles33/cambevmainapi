@@ -18,6 +18,7 @@ class Collection(models.Model):
         return reverse('ceramichaven:selected_catalog',
                        args=[self.slug])
 
+
     def __str__(self):
         return self.name
 
@@ -47,6 +48,9 @@ class Product(models.Model):
         if self.image:
             return self.image.url
         return ''
+
+    def get_collection(self):
+        return self.category.name
 
     def __str__(self):
         return self.name

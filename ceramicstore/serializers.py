@@ -20,7 +20,8 @@ class ProductSerializer(serializers.ModelSerializer):
             "slug",
             "price",
             "get_image_url",
-            "product_pictures"
+            "product_pictures",
+            "get_collection"
         ]
 
 
