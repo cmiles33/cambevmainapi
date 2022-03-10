@@ -21,7 +21,9 @@ class ProductSerializer(serializers.ModelSerializer):
             "price",
             "get_image_url",
             "product_pictures",
-            "get_collection"
+            "get_collection",
+            "get_collection_id",
+            "get_collection_slug",
         ]
 
 

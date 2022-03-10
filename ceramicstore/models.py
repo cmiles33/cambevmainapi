@@ -52,6 +52,12 @@ class Product(models.Model):
     def get_collection(self):
         return self.category.name
 
+    def get_collection_id(self):
+        return self.category.id
+
+    def get_collection_slug(self):
+        return self.category.slug
+
     def __str__(self):
         return self.name
 
